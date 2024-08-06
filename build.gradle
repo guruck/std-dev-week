@@ -6,12 +6,7 @@ plugins {
 
 group = 'edu.guruck'
 version = '0.0.1-SNAPSHOT'
-
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(22)
-	}
-}
+sourceCompatibility = '21'
 
 repositories {
 	mavenCentral()
@@ -33,6 +28,7 @@ tasks.jar {
 		attributes["Main-Class"] = "edu.guruck.Application"
 	}
 }
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
