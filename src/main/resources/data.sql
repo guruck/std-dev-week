@@ -1,0 +1,16 @@
+insert into tb_account (`agency`, `balance`, `additional_limit`, `number`) values ('1594-3', 1235.00, 1000.00, '5342');
+insert into tb_card (`available_limit`, `number`) values (2000.00, '1234 6541 7894 6655');
+insert into tb_user (`account_id`, `card_id`, `name`) values (1, 1, 'Jonas Brother');
+insert into tb_account (`agency`, `balance`, `additional_limit`, `number`) values ('1594-3', 3235.54, 1500.00, '2458');
+insert into tb_card (`available_limit`, `number`) values (2000.00, '3443 4569 1244 9854');
+insert into tb_user (`account_id`, `card_id`, `name`) values (2, 2, 'Rebeca Fiorentino');
+insert into tb_feature (`description`, `icon`) values ('PIX', 'maozinha.png');
+insert into tb_feature (`description`, `icon`) values ('pagar', 'dolar.png');
+insert into tb_feature (`description`, `icon`) values ('investir', 'porquinho.png');
+insert into tb_news (`description`, `icon`) values ('O banco X tem soluções de credito sob medida para você. Confira!', 'carteira.png');
+insert into tb_news (`description`, `icon`) values ('Finalmente um seguro simples, acessivel e digital. Clique e contrate já', 'seguro.png');
+insert into tb_user_features (`tb_user_id`, `features_id`) values (1, 1);
+insert into tb_user_features (`tb_user_id`, `features_id`) values (1, 2);
+insert into tb_user_features (`tb_user_id`, `features_id`) values (2, 3);
+insert into tb_user_news (`tb_user_id`, `news_id`) values (1, 1);
+insert into tb_user_news (`tb_user_id`, `news_id`) values (2, 2);
