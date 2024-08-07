@@ -8,6 +8,12 @@ group = 'edu.guruck'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '21'
 
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
 repositories {
 	mavenCentral()
 }
@@ -28,7 +34,6 @@ tasks.jar {
 		attributes["Main-Class"] = "edu.guruck.Application"
 	}
 }
-
 tasks.named('test') {
 	useJUnitPlatform()
 }
